@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Legends</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    section {
+      padding: 2em;
+    }
+
+    .featured-players, .player-profiles, .matches, .fan-zone {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .player, .player-profile, .match, .fan-section {
+      width: 45%;
+      background-color: white;
+      padding: 1em;
+      margin: 1em;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+
+    #map {
+      height: 500px;
+      width: 100%;
+    }
+
+    form {
+      margin-top: 1em;
+      width: 100%;
+    }
+
+    form label {
+      display: block;
+      margin: 0.5em 0 0.2em;
+    }
+
+    form input[type="text"], form textarea, form select {
+      width: 100%;
+      padding: 0.5em;
+      margin-bottom: 1em;
+    }
+
+    form input[type="submit"] {
+      background-color: #333;
+      color: white;
+      padding: 0.7em 1em;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Cricket Legends</h1>
+    <p>Your go-to destination for cricket star profiles and achievements.</p>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#players">Players</a></li>
+        <li><a href="#map-section">Interactive Map</a></li>
+        <li><a href="#matches">Top Matches</a></li>
+        <li><a href="#fanzone">Fan Zone</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Featured Players</h2>
+    <div class="featured-players">
+      <div class="player">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Virat_Kohli_in_PMO_New_Delhi.jpg/330px-Virat_Kohli_in_PMO_New_Delhi.jpg" alt="Virat Kohli" style="width: 100%;">
+        <h3>Virat Kohli 1</h3>
+        <p>Achievements: Kohli was a key member of the Indian team that won the 2011 Cricket World Cup, 2013 Champions Trophy and 2024 T20 World Cup and captained India to win the ICC Test mace three consecutive times in 2017, 2018, and 2019. He represents Royal Challengers Bengaluru in the Indian Premier League and Delhi in domestic cricket.</p>
+      </div>
+      <div class="player">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/AB_de_villiers_%28cropped%29.jpg" alt="AB de Villiers" style="width: 100%;">
+        <h3>AB de Villiers 2</h3>
+        <p>Achievements: De Villiers holds many batting records, including the world's fastest One Day International (ODI) 50, 100 and 150, the fastest Test century by a South African and the fastest Twenty20 International (T20I) 50 by a South African. He won 3 ICC ODI Player Of The Year Awards (2010, 2014, 2015).</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="players">
+    <h2>Player Profiles</h2>
+    <div class="player-profiles">
+      <div class="player-profile">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Shubman_Gill_2023_%28cropped%29.jpg" alt="subhman gill" style="width: 100%;">
+        <h3>subhman gill</h3>
+        <p>Statistics:4562 Runs, 0Wickets, etc.</p>
+        <p>Notable Achievements: ipl orange cap,the second-highest total in IPL history 890 etc.</p>
+      </div>
+      <div class="player-profile">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/The_Prime_Minister_welcomes_the_World_Cup_winning_cricketers_%2852764650104%29_-_Sam_Curran_%28cropped%29.jpg" alt="sam curran " style="width: 100%;">
+        <h3>sam curran </h3>
+        <p>Statistics: 1574Runs, 47Wickets, etc.</p>
+        <p>Notable Achievements: Curran was the Player of the Tournament after taking 13 wickets at an average of 11.38. He also set the English record for best T20I bowling figures with 5–10 against Afghanistan etc.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="map-section">
+    <h2>Interactive Player Map</h2>
+    <div id="map" style="height: 500px;"></div>
+    
+  </section>
+
+  <section id="matches">
+    <h2>Memorable Matches</h2>
+    <div class="matches">
+      <div class="match">
+        <h3>Match 1: India vs Pakistan - 2011 World Cup</h3>
+        <iframe src="https://www.youtube.com/embed/xyz" title="Match 1 Highlights" allowfullscreen style="width: 100%; height: 300px;"></iframe>
+        <p>Memorable moments: Player 1’s century, nail-biting finish, etc.</p>
+      </div>
+      <div class="match">
+        <h3>Match 2: Australia vs England - Ashes 2019</h3>
+        <iframe src="https://www.youtube.com/embed/abc" title="Match 2 Highlights" allowfullscreen style="width: 100%; height: 300px;"></iframe>
+        <p>Memorable moments: XYZ’s bowling performance, close victory, etc.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="fanzone">
+    <h2>Fan Zone</h2>
+    <div class="fan-zone">
+      <div class="fan-section">
+        <h3>Submit Your Favorite Player Story</h3>
+        <form action="#">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="story">Your Story:</label>
+          <textarea id="story" name="story" required></textarea>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+      <div class="fan-section">
+        <h3>Vote for the Greatest Player of All Time</h3>
+        <form>
+          <label for="player">Choose a player:</label>
+          <select id="player" name="player">
+            <option value="player1">Player 1</option>
+            <option value="player2">Player 2</option>
+          </select>
+          <input type="submit" value="Vote">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Cricket Legends. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function initMap() {
+      const map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 3,
+        center: { lat: 20, lng: 0 },
+      });
+
+      const players = [
+        { name: 'Virat', position: { lat: 28.6139, lng: 77.2090 }, country: 'India' },
+        { name: 'Strokes', position: { lat: 51.5074, lng: -0.1278 }, country: 'england' },
+      ];
+
+      players.forEach(player => {
+        new google.maps.Marker({
+          position: player.position,
+          map,
+          title: player.name,
+        });
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA...&callback=initMap" async defer></script>
+</body>
+</html>
